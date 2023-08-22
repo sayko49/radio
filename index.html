@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - HTML5 Internet Radio Player</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="radio-container">
+  <div class="radio-header">
+    <div class="radio-name">Name of Station</div>
+    <div class="current-presenter">Name of current show (can be disabled)</div>
+  </div>
+  <div class="radio-body">
+    <div class="shine"></div>
+    <!-- disabled for now 
+    <div class="current-song">
+      Dua Lipa - Scared to be lonely
+    </div>
+-->
+    <div class="radio-buttons">
+      <audio id="radioPlayer" src="http://blackwood.fcad.ryerson.ca:8002/spiritlive1" autoplay="autoplay"></audio>
+      <div class="button button-play"><i class="fa fa-pause" aria-hidden="true"></i></div>
+      <div class="button button-stop"><i class="fa fa-stop" aria-hidden="true"></i></div>
+      <!-- disabled for now 
+<div class="button button-request">Request</div>
+-->
+    </div>
+    <div class="wave-bars">
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+      <div class="wave wave-4"></div>
+      <div class="wave wave-5"></div>
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+      <div class="wave wave-4"></div>
+      <div class="wave wave-5"></div>
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+      <div class="wave wave-4"></div>
+      <div class="wave wave-5"></div>
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+      <div class="wave wave-4"></div>
+      <div class="wave wave-5"></div>
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+      <div class="wave wave-4"></div>
+      <div class="wave wave-5"></div>
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+      <div class="wave wave-4"></div>
+      <div class="wave wave-5"></div>
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+      <div class="wave wave-4"></div>
+      <div class="wave wave-5"></div>
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+      <div class="wave wave-4"></div>
+      <div class="wave wave-5"></div>
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+      <div class="wave wave-4"></div>
+      <div class="wave wave-5"></div>
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+      <div class="wave wave-4"></div>
+      <div class="wave wave-5"></div>
+    </div>
+  </div>
+  <div class="radio-message">
+    <div class="message-header">
+      Current message:
+    </div>
+    <div class="message-body">
+      Tune in now for some epic times! Can be disabled or link to something.
+    </div>
+  </div>
+  <div class="radio-volume">
+    <div class="button button-sound"><i class="fa fa-volume-up" aria-hidden="true"></i></div>
+    <input id="radioVol" class="range" type="range" value="50" oninput="setVolume()" onchange="setVolume()">
+  </div>
+</div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
